@@ -21,7 +21,7 @@ $ git init 生成仓库文件（.git文件夹）
 $ git add . 添加到本地 (添加所有文件) 
 $ git add fileName 添加到本地 (添加指定文件)
 $ git commit -m "提交说明" （提交到本地仓库）
-
+123123123
 管理git本地仓库
 $ git status 查看仓库当前状态
 $ git diff <file name> 查看指定文件状态 
