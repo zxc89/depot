@@ -31,4 +31,24 @@ $ git reflog  查看命令记录
 $ git reset --hard 版本id （更改版本）
 $ git pull origin master 下拉文件
 
+
+Git is a distributed version control system.
+Git is free software distributed under the GPL.
 Git has a mutable index called stage.
+Git tracks changes.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
