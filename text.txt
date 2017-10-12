@@ -21,12 +21,14 @@ $ git init 生成仓库文件（.git文件夹）
 $ git add . 添加到本地 (添加所有文件) 
 $ git add fileName 添加到本地 (添加指定文件)
 $ git commit -m "提交说明" （提交到本地仓库）
-$ git log (查看提交日志 从最近到最远)
-$ git log --pretty=oneline (简化版查看日志)
 
 管理git本地仓库
 $ git status 查看仓库当前状态
 $ git diff <file name> 查看指定文件状态 
-$ git reflog  查看提交日志
-$ git reset --hard 版本id
+$ git log (查看提交日志 从最近到最远)
+$ git log --pretty=oneline (简化版查看日志)
+$ git reflog  查看命令记录
+$ git reset --hard 版本id （更改版本）
 $ git pull origin master 下拉文件
+
+Git has a mutable index called stage.
