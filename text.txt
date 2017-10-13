@@ -107,4 +107,4 @@ $ git branch dev （创建分支）
 $ git checkout dev （切换分支）
 $ git checkout -b dev (创建并切换分支) 
 $ git branch (查看当前所在分支)
-Creating a new branch is quick.
+Creating a new branch is quick.123
