@@ -46,8 +46,10 @@ $ git remote add origin git@github.com:github_name/project_name.git  （关联Gi
 $ git clone 仓库地址 （克隆一个本地库）
 
 分支管理
+$ git branch (查看分支)
 $ git branch dev （创建分支）
 $ git checkout dev （切换分支）
 $ git checkout -b dev (创建并切换分支) 
 $ git branch (查看当前所在分支)
-Creating a new branch is quick.
+$ git merge (合并某个分支到当前分支)
+$ git branch -d dev (删除dev 分支)
