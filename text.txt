@@ -1,110 +1,53 @@
-°²×°git
+å®‰è£…git
 Ubuntu Linux : 
-	
-	
-	sudo apt-get install git »òÕß sudo apt-get install git-core
-
-
-
-
-
+	sudo apt-get install git æˆ–è€… sudo apt-get install git-core
 Mac OS X : 
-	
-	
-	´ÓAppStore°²×°Xcode£¬Xcode¼¯³ÉÁËGit£¬²»¹ıÄ¬ÈÏÃ»ÓĞ°²×°£¬ÄãĞèÒªÔËĞĞXcode£¬Ñ¡Ôñ²Ëµ¥¡°Xcode¡±->¡°Preferences¡±£¬ÔÚµ¯³ö´°¿ÚÖĞÕÒµ½¡°Downloads¡±£¬Ñ¡Ôñ¡°Command Line Tools¡±£¬µã¡°Install¡±¾Í¿ÉÒÔÍê³É°²×°ÁË¡£
-
-
-
-
-
+	ä»AppStoreå®‰è£…Xcodeï¼ŒXcodeé›†æˆäº†Gitï¼Œä¸è¿‡é»˜è®¤æ²¡æœ‰å®‰è£…ï¼Œä½ éœ€è¦è¿è¡ŒXcodeï¼Œé€‰æ‹©èœå•â€œXcodeâ€->â€œPreferencesâ€ï¼Œåœ¨å¼¹å‡ºçª—å£ä¸­æ‰¾åˆ°â€œDownloadsâ€ï¼Œé€‰æ‹©â€œCommand Line Toolsâ€ï¼Œç‚¹â€œInstallâ€å°±å¯ä»¥å®Œæˆå®‰è£…äº†ã€‚
 Windows : 
-	
-	https://git-for-windows.github.ioÏÂÔØ
-ÉèÖÃ git	
+	https://git-for-windows.github.ioä¸‹è½½
 
-
-
-
+è®¾ç½® git	
 $ git config --global user.name "Your Name"
-
-
 $ git config --global user.email "email@example.com"
 
-
-
-
-
-´´½¨°æ±¾¿â
-
+åˆ›å»ºç‰ˆæœ¬åº“
 $ mkdir depot
-
-
 $ cd depot
+$ pwd æŸ¥çœ‹ä»“åº“åœ°å€
+$ git init ç”Ÿæˆä»“åº“æ–‡ä»¶ï¼ˆ.gitæ–‡ä»¶å¤¹ï¼‰
 
+æ·»åŠ åˆ°gitæœ¬åœ°ä»“åº“éœ€è¦2æ­¥
+$ git add . æ·»åŠ åˆ°æœ¬åœ° (æ·»åŠ æ‰€æœ‰æ–‡ä»¶) 	
+$ git add fileName æ·»åŠ åˆ°æœ¬åœ° (æ·»åŠ æŒ‡å®šæ–‡ä»¶)
+	git add æŠŠæ–‡ä»¶æäº¤åˆ°æš‚å­˜åŒºåŸŸ
+$ git commit -m "æäº¤è¯´æ˜" ï¼ˆæäº¤åˆ°æœ¬åœ°ä»“åº“ï¼‰
+	git commit æŠŠæš‚å­˜åŒºåŸŸçš„æ–‡ä»¶æäº¤åˆ°æœ¬åœ°åº“
 
-$ pwd ²é¿´²Ö¿âµØÖ·
+ç®¡ç†gitæœ¬åœ°ä»“åº“
+$ git status æŸ¥çœ‹ä»“åº“å½“å‰çŠ¶æ€
+$ git diff <file name> æŸ¥çœ‹æŒ‡å®šæ–‡ä»¶çŠ¶æ€ 
+$ git log (æŸ¥çœ‹æäº¤æ—¥å¿— ä»æœ€è¿‘åˆ°æœ€è¿œ)
+$ git log --pretty=oneline (ç®€åŒ–ç‰ˆæŸ¥çœ‹æ—¥å¿—)
+$ git reflog  æŸ¥çœ‹å‘½ä»¤è®°å½•
+$ git reset --hard ç‰ˆæœ¬id ï¼ˆæ›´æ”¹ç‰ˆæœ¬ï¼‰
+$ git pull origin master ï¼ˆä¸‹æ‹‰æ–‡ä»¶ï¼‰		
+$ git pull --rebase origin maseter ï¼ˆä¸‹æ‹‰æ–‡ä»¶ï¼‰
+$ git diff HEAD -- fileName (æŸ¥çœ‹å·¥ä½œåŒºä¸æœ¬åœ°åº“æœ€æ–°ç‰ˆæœ¬åŒºåˆ«)
 
+$ git checkout -- fileName (ä¸¢å¼ƒå·¥ä½œåŒºä¿®æ”¹)
+$ git reset HEAD fileName (æ’¤é”€æš‚å­˜åŒºä¿®æ”¹)
 
-$ git init Éú³É²Ö¿âÎÄ¼ş£¨.gitÎÄ¼ş¼Ğ£©
+$ rm fileName (åˆ é™¤æœ¬åœ°åº“æ–‡ä»¶)
+$ git checkout - fileName (å›å¤åˆ é™¤)
+$ git rm fileName + git commit -m (ä»ç‰ˆæœ¬åº“åˆ é™¤å¹¶æäº¤)
 
+è¿œç¨‹åº“æ“ä½œ
+$ git remote add origin git@github.com:github_name/project_name.git  ï¼ˆå…³è”GitHubï¼‰
+$ git clone ä»“åº“åœ°å€ ï¼ˆå…‹éš†ä¸€ä¸ªæœ¬åœ°åº“ï¼‰
 
-
-
-
-Ìí¼Óµ½git±¾µØ²Ö¿âĞèÒª2²½
-
-
-$ git add . Ìí¼Óµ½±¾µØ (Ìí¼ÓËùÓĞÎÄ¼ş) 	
-
-
-$ git add fileName Ìí¼Óµ½±¾µØ (Ìí¼ÓÖ¸¶¨ÎÄ¼ş)
-	
-	
-	git add °ÑÎÄ¼şÌá½»µ½Ôİ´æÇøÓò
-
-$ git commit -m "Ìá½»ËµÃ÷" £¨Ìá½»µ½±¾µØ²Ö¿â£©
-	
-	
-	git commit °ÑÔİ´æÇøÓòµÄÎÄ¼şÌá½»µ½±¾µØ¿â
-
-
-¹ÜÀígit±¾µØ²Ö¿â
-
-
-$ git status ²é¿´²Ö¿âµ±Ç°×´Ì¬
-
-
-$ git diff <file name> ²é¿´Ö¸¶¨ÎÄ¼ş×´Ì¬ 
-$ git log (²é¿´Ìá½»ÈÕÖ¾ ´Ó×î½üµ½×îÔ¶)
-
-
-$ git log --pretty=oneline (¼ò»¯°æ²é¿´ÈÕÖ¾)
-
-
-$ git reflog  ²é¿´ÃüÁî¼ÇÂ¼
-
-
-$ git reset --hard °æ±¾id £¨¸ü¸Ä°æ±¾£©
-
-$ git pull origin master £¨ÏÂÀ­ÎÄ¼ş£©		
-$ git pull --rebase origin maseter £¨ÏÂÀ­ÎÄ¼ş£©
-$ git diff HEAD -- fileName (²é¿´¹¤×÷ÇøÓë±¾µØ¿â×îĞÂ°æ±¾Çø±ğ)
-
-
-$ git checkout -- fileName (¶ªÆú¹¤×÷ÇøĞŞ¸Ä)
-$ git reset HEAD fileName (³·ÏúÔİ´æÇøĞŞ¸Ä)
-
-$ rm fileName (É¾³ı±¾µØ¿âÎÄ¼ş)
-$ git checkout - fileName (»Ø¸´É¾³ı)
-$ git rm fileName + git commit -m (´Ó°æ±¾¿âÉ¾³ı²¢Ìá½»)
-
-Ô¶³Ì¿â²Ù×÷
-$ git remote add origin git@github.com:github_name/project_name.git  £¨¹ØÁªGitHub£©
-$ git clone ²Ö¿âµØÖ· £¨¿ËÂ¡Ò»¸ö±¾µØ¿â£©
-
-·ÖÖ§¹ÜÀí
-$ git branch dev £¨´´½¨·ÖÖ§£©
-$ git checkout dev £¨ÇĞ»»·ÖÖ§£©
-$ git checkout -b dev (´´½¨²¢ÇĞ»»·ÖÖ§) 
-$ git branch (²é¿´µ±Ç°ËùÔÚ·ÖÖ§)
+åˆ†æ”¯ç®¡ç†
+$ git branch dev ï¼ˆåˆ›å»ºåˆ†æ”¯ï¼‰
+$ git checkout dev ï¼ˆåˆ‡æ¢åˆ†æ”¯ï¼‰
+$ git checkout -b dev (åˆ›å»ºå¹¶åˆ‡æ¢åˆ†æ”¯) 
+$ git branch (æŸ¥çœ‹å½“å‰æ‰€åœ¨åˆ†æ”¯)
 Creating a new branch is quick.
