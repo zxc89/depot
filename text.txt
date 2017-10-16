@@ -64,3 +64,13 @@ $ git branch -d dev (删除dev 分支)
 $git log --graph (查看分支合并图)
 
 分支管理
+$ git stash (暂时保存，非提交)
+$ git stash list (查看暂存位置)
+$ git stash apply (回复暂存，但是不删除暂存记录)
+$ git stash drop (删除暂存记录)
+$ git stash pop (回复暂存并且删除暂存记录)
+
+$ git branch -D <name> (强制删除)
+$ git remote (查看远程库信息)
+$ git remote -v (查看远程库详细信息)
+$ git push origin <name> (推送指定分支至远程库)
