@@ -74,3 +74,19 @@ $ git branch -D <name> (强制删除)
 $ git remote (查看远程库信息)
 $ git remote -v (查看远程库详细信息)
 $ git push origin <name> (推送指定分支至远程库)
+
+标签管理
+切入需要打标签的分支
+$ git tag (查看标签名)
+$ git tag <name> (设置标签)
+$ git tag <name> commit-id(6224937) (指定ID 设置标签名)
+$ git show v1.0 (查看指定标签信息)
+$ git tab -a v1.0 -m "说明" commit-id(6224937) (-a 指定标签名 -m 指定说明文字)
+$ git tab -s v0.2 -m "私钥标签" ID 
+	(
+		签名采用PGP签名，因此，必须首先安装gpg（GnuPG），
+		如果没有找到gpg，或者没有gpg密钥对，就会报错：
+			gpg: signing failed: secret key not available
+			error: gpg failed to sign the data
+			error: unable to sign the tag
+	)
