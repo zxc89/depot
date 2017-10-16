@@ -90,3 +90,9 @@ $ git tab -s v0.2 -m "私钥标签" ID
 			error: gpg failed to sign the data
 			error: unable to sign the tag
 	)
+
+操作标签
+$ git tag -d v0.1 (删除指定标签)
+$ git push origin v1.0 (推送指定标签)
+$ git push origin --tags (推送所有标签)
+$ git push origin :refs/tags/v0.9 (删除远程库标签)
